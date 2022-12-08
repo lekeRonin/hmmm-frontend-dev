@@ -9,9 +9,15 @@
     "fix": "vue-cli-service lint format"
   },
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "dayjs": "^1.11.7",
+=======
+    "all": "^0.0.0",
+    "axios": "^0.19.2",
+    "core-js": "^3.26.1",
+>>>>>>> 759667730197835a878690b89b384df622d555d8
     "echarts": "^4.6.0",
     "element-ui": "^2.13.0",
     "font-awesome": "^4.7.0",

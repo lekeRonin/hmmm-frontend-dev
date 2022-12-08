@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="dashboard-container">
     <div class="app-container">
       <!-- 卡片视图部分 -->
@@ -458,3 +459,13 @@ export default {
   text-align: center;
 }
 </style>
+=======
+  <div class='container'>企业管理</div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style scoped lang='less'></style>
+>>>>>>> 759667730197835a878690b89b384df622d555d8

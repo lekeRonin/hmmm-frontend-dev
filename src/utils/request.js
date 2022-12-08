@@ -9,7 +9,11 @@ const instance = axios.create({
   timeout: 5000 // request timeout
 })
 
+<<<<<<< HEAD
 // request interceptor
+=======
+// 请求拦截
+>>>>>>> 759667730197835a878690b89b384df622d555d8
 instance.interceptors.request.use(
   config => {
     // Do something before request is sent
@@ -25,7 +29,11 @@ instance.interceptors.request.use(
   }
 )
 
+<<<<<<< HEAD
 // respone interceptor
+=======
+// 响应拦截
+>>>>>>> 759667730197835a878690b89b384df622d555d8
 instance.interceptors.response.use(
   response => response,
   /**
@@ -65,7 +73,11 @@ instance.interceptors.response.use(
     return Promise.reject(error)
   }
 )
+<<<<<<< HEAD
 export const request = instance
+=======
+
+>>>>>>> 759667730197835a878690b89b384df622d555d8
 export const createAPI = (url, method, data) => {
   const config = {}
   if (method === 'get') {

@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="container">
     <el-dialog title="提示" :visible.sync="dialogVisible" width="30%" :before-close="close">
       <div>
@@ -70,3 +71,13 @@ export default {
   }
 }
 </style>
+=======
+  <div class='container'>试题审核对话框</div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style scoped lang='less'></style>
+>>>>>>> 759667730197835a878690b89b384df622d555d8

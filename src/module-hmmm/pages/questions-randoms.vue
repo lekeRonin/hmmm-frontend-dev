@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <el-card class="box-card">
     <el-form ref="form" :model="form">
       <el-form-item label="输入编号" label-width="80px">
@@ -189,3 +190,13 @@ export default {
   }
 }
 </style>
+=======
+  <div class='container'>精选题库</div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style scoped lang='less'></style>
+>>>>>>> 759667730197835a878690b89b384df622d555d8

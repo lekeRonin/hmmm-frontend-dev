@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="container">
     <el-card>
       <!-- 顶部提示 -->
@@ -542,3 +543,13 @@ export default {
   }
 }
 </style>
+=======
+  <div class='container'>精选题库</div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style scoped lang='less'></style>
+>>>>>>> 759667730197835a878690b89b384df622d555d8
