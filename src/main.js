@@ -10,7 +10,7 @@ import i18n from './lang' // Internationalization
 import './icons' // icon
 import './errorLog' // error log
 import * as filters from './filters' // global filters
-import './mock' // simulation data
+// import './mock' // simulation data
 // font-awesome
 import 'font-awesome/css/font-awesome.css'
 /*
@@ -19,6 +19,9 @@ import 'font-awesome/css/font-awesome.css'
 import dashboard from '@/module-dashboard/' // 面板
 import base from '@/module-manage/' // 用户管理
 import hmmm from '@/module-hmmm/' // 黑马面面
+
+import Component from '@/components'
+Vue.use(Component) // 注册自己的插件
 
 Vue.use(dashboard, store)
 Vue.use(base, store)

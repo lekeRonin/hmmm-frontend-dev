@@ -115,6 +115,7 @@ export default {
           await this.$store
             .dispatch('LoginByUsername', {
               username: this.loginForm.username,
+              // password: shajs('sha256')
               password: shajs('sha256')
                 .update(this.loginForm.password)
                 .digest('hex')
