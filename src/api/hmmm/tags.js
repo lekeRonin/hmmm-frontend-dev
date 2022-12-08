@@ -8,6 +8,15 @@
  */
 import { request } from '@/utils/request'
 
+// 获取学科简单列表
+export function getSubjectsList (params) {
+  return request({
+    url: '/subjects/simple',
+    method: 'get',
+    params
+  })
+}
+
 export function getTagList (params) {
   return request({
     url: '/tags',

@@ -97,7 +97,7 @@
 
 <script>
 import { formatDateTime } from '@/filters'
-import { getSubjectSimple, getTagList, addTag, getTagDetail, editeTag, delTag, postTagState } from '@/api/hmmm/tags'
+import { getSubjectsList, getTagList, addTag, getTagDetail, editeTag, delTag, postTagState } from '@/api/hmmm/tags'
 export default {
   name: 'Label',
   data () {
@@ -135,7 +135,7 @@ export default {
   },
   async created () {
     if (this.name) {
-      const res = await getSubjectSimple(this.name)
+      const res = await getSubjectsList(this.name)
       const subjectID = res.data.filter(item => item.label === this.name)[0].value
       this.getTagList({
         page: this.page.page,
@@ -227,6 +227,7 @@ export default {
       }
       this.$refs.tagForm.resetFields()
       this.showDialog = false
+      console.log(this.id)
     },
     btnOK () {
       this.$refs.tagForm.validate(async (isOK) => {
