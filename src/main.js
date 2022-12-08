@@ -20,6 +20,16 @@ import dashboard from '@/module-dashboard/' // 面板
 import base from '@/module-manage/' // 用户管理
 import hmmm from '@/module-hmmm/' // 黑马面面
 
+// 引入dayjs格式化时间
+import dayjs from 'dayjs'
+// 将dayjs挂载到全局
+Vue.prototype.$dayjs = dayjs
+
+// 过滤器
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
+
 Vue.use(dashboard, store)
 Vue.use(base, store)
 // Vue.use(list, store)
@@ -37,9 +47,9 @@ Vue.use(Element, {
   i18n: (key, value) => i18n.t(key, value)
 })
 // 过滤器
-Object.keys(filters).forEach(key => {
-  Vue.filter(key, filters[key])
-})
+// Object.keys(filters).forEach(key => {
+//   Vue.filter(key, filters[key])
+// })
 
 Vue.config.productionTip = false
 

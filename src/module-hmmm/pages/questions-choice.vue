@@ -146,7 +146,7 @@
           </el-table-column>
           <el-table-column prop="addDate" label="录入时间" width="280">
             <template slot-scope="scope">
-              {{ scope.row.addDate | relativeTime }}
+              {{ scope.row.addDate }}
             </template>
           </el-table-column>
           <el-table-column prop="address" label="难度">
@@ -207,13 +207,13 @@ import { baseDetailList, choicePublish, removeQuestionList, choice } from '@/api
 // 导入城市和区域/县
 import { provinces, citys } from '@/api/hmmm/citys'
 // 标签接口
-import { tagsList } from '@/api/hmmm/tags'
+import { getTagList } from '@/api/hmmm/tags'
 // 用户列表
 import { list } from '@/api/base/users.js'
 // 学科接口
-import { subjectsList } from '@/api/hmmm/subjects'
+import { getSubjects } from '@/api/hmmm/subjects'
 // 目录接口
-import { cataloList } from '@/api/hmmm/directorys'
+import { getDirectorys } from '@/api/hmmm/directorys'
 export default {
   /*
   单选 ---> 1
@@ -289,7 +289,7 @@ export default {
     // 获取用户列表/ 录入人
     this.getCreator()
     // 获取学科列表
-    this.getSubjectsList()
+    this.getgetSubjects()
   },
   components: {
     questionsPreview,
@@ -346,6 +346,7 @@ export default {
       data.subject = item.subject
       this.dialogVisible = true
       // 传入试题
+      console.log(data)
       this.questionItem = data
     },
 
@@ -435,6 +436,9 @@ export default {
     async getBaseQuestionList () {
       const { data: res } = await choice(this.query)
       this.counts = res.counts
+       res.items.forEach(item => {
+       item.addDate = this.$dayjs(item.addDate).format('YYYY-MM-DD hh:mm:ss')
+      })
       this.questionList = res.items
     },
 
@@ -462,22 +466,22 @@ export default {
     async onSubjectChange (val) {
       this.query.tags = null
       this.query.catalogID = null
-      const { data: res } = await cataloList({ subjectID: val })
+      const { data: res } = await getDirectorys({ subjectID: val })
       this.directory = res.items
       this.tagList = []
     },
 
     //  获取学科列表
-    async getSubjectsList () {
+    async getgetSubjects () {
       try {
-        const { data: res } = await subjectsList({ page: 1, pagesize: 100 })
+        const { data: res } = await getSubjects({ page: 1, pagesize: 100 })
         this.subjects = res.items
       } catch (error) {}
     },
 
     //  获取标签列表
     async getTagList () {
-      const { data: res } = await tagsList({
+      const { data: res } = await getTagList({
         subjectID: this.query.subjectID
       })
       this.tagList = res.items

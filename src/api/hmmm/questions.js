@@ -48,3 +48,8 @@ export const randoms = data => createAPI('/questions/randoms', 'get', data)
 
 // 组题列表删除
 export const removeRandoms = data => createAPI(`/questions/randoms/${data.id}`, 'delete', data)
+
+// 获取组题列表
+export const problemSets = data => createAPI('/questions/randoms', 'get', data)
+// 删除
+export const delData = data => createAPI(`/questions/randoms/${data.id}`, 'delete', data)

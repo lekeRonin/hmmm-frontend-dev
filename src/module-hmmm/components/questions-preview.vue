@@ -72,13 +72,13 @@
       </el-row>
       <hr />
       <el-row class="answer">
-        <span>【答案解析】：https://cn.vuejs.org/ 有答案 </span>
+        <span>【答案解析】：{{ questionItem.answer  }} </span>
       </el-row>
 
       <hr />
       <el-row class="answer">
         <span>
-          【题目备注】：https://cn.vuejs.org/ 有答案
+          【题目备注】：{{ questionItem.remarks }}
         </span>
       </el-row>
       <span slot="footer" class="dialog-footer">
@@ -89,7 +89,7 @@
 </template>
 
 <script>
-// import question from '../../api/hmmm/questions'
+
 export default {
   data () {
     return {

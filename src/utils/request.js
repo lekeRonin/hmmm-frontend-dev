@@ -65,7 +65,7 @@ instance.interceptors.response.use(
     return Promise.reject(error)
   }
 )
-
+export const request = instance
 export const createAPI = (url, method, data) => {
   const config = {}
   if (method === 'get') {
