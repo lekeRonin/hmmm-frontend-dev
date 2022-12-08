@@ -11,10 +11,14 @@ import './icons' // icon
 import './errorLog' // error log
 import * as filters from './filters' // global filters
 <<<<<<< HEAD
+<<<<<<< HEAD
 import './mock' // simulation data
 =======
 // import './mock' // simulation data
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+import './mock' // simulation data
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 // font-awesome
 import 'font-awesome/css/font-awesome.css'
 /*
@@ -24,6 +28,7 @@ import dashboard from '@/module-dashboard/' // 面板
 import base from '@/module-manage/' // 用户管理
 import hmmm from '@/module-hmmm/' // 黑马面面
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // 引入dayjs格式化时间
 import dayjs from 'dayjs'
@@ -39,6 +44,8 @@ import Component from '@/components'
 Vue.use(Component) // 注册自己的插件
 >>>>>>> 759667730197835a878690b89b384df622d555d8
 
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 Vue.use(dashboard, store)
 Vue.use(base, store)
 // Vue.use(list, store)
@@ -57,6 +64,7 @@ Vue.use(Element, {
 })
 // 过滤器
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Object.keys(filters).forEach(key => {
 //   Vue.filter(key, filters[key])
 // })
@@ -65,6 +73,11 @@ Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 
 Vue.config.productionTip = false
 

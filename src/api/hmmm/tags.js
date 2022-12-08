@@ -8,6 +8,7 @@
  */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
  * @Author: zhanglianchang
  * @Date: 2020-08-01 14:39:32
@@ -20,6 +21,9 @@
 >>>>>>> 474300f603c3d6e3c024bb2d1b53631aa9d7e263
 import { request } from '@/utils/request'
 
+=======
+import { request } from '@/utils/request'
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 // 获取学科简单列表
 export function getSubjectsList (params) {
   return request({
@@ -79,7 +83,10 @@ export function postTagState (data) {
   })
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 759667730197835a878690b89b384df622d555d8
 =======
 >>>>>>> 474300f603c3d6e3c024bb2d1b53631aa9d7e263
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a

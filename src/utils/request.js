@@ -6,6 +6,7 @@ import { getToken } from '@/utils/auth'
 // create an axios instance
 const instance = axios.create({
 <<<<<<< HEAD
+<<<<<<< HEAD
   baseURL: 'http://127.0.0.1:1024',
 =======
   baseURL: 'http://127.0.0.1:5000',
@@ -18,6 +19,13 @@ const instance = axios.create({
 =======
 // 请求拦截
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+  baseURL: 'http://127.0.0.1:1024',
+  timeout: 5000 // request timeout
+})
+
+// request interceptor
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 instance.interceptors.request.use(
   config => {
     // Do something before request is sent
@@ -33,6 +41,7 @@ instance.interceptors.request.use(
   }
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -42,6 +51,10 @@ instance.interceptors.request.use(
 =======
 // 响应拦截
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+
+// respone interceptor
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 instance.interceptors.response.use(
   response => response,
   /**
@@ -83,6 +96,7 @@ instance.interceptors.response.use(
 )
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 export const request = instance
 =======
 
@@ -90,6 +104,9 @@ export const request = instance
 =======
 export const request = instance
 >>>>>>> 474300f603c3d6e3c024bb2d1b53631aa9d7e263
+=======
+export const request = instance
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 export const createAPI = (url, method, data) => {
   const config = {}
   if (method === 'get') {

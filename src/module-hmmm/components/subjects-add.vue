@@ -1,10 +1,14 @@
 <template>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
   <div class='container'>添加学科对话框</div>
 </template>
 
 <script>
 export default {}
+<<<<<<< HEAD
 =======
   <el-dialog :title="getTitle()" :visible="AddDialog" class='container' width="30%" @close="OnClose">
     <el-form label-width="80px" :model="addForm" :rules="rules" ref="addSubject">
@@ -99,6 +103,8 @@ export default {
   }
 }
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 </script>
 
 <style scoped lang='less'></style>

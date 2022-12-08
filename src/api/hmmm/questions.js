@@ -7,6 +7,7 @@
  * 题库有关的接口：自己写吧~~  已经被张老师删了 ^_^
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { createAPI } from '@/utils/request'
 // 获取基础题库列表
 export const baseQuestionList = data => createAPI('/questions', 'get', data)
@@ -56,3 +57,5 @@ export const problemSets = data => createAPI('/questions/randoms', 'get', data)
 export const delData = data => createAPI(`/questions/randoms/${data.id}`, 'delete', data)
 =======
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a

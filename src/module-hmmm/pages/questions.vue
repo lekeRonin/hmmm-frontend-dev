@@ -1,5 +1,6 @@
 <template>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <div class="container">
     <el-card>
       <!-- 顶部提示 -->
@@ -438,6 +439,8 @@ export default {
 }
 </style>
 =======
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
   <div class='container'>题组管理</div>
 </template>
 
@@ -446,4 +449,7 @@ export default {}
 </script>
 
 <style scoped lang='less'></style>
+<<<<<<< HEAD
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a

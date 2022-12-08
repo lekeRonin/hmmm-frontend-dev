@@ -116,9 +116,12 @@ export default {
             .dispatch('LoginByUsername', {
               username: this.loginForm.username,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
               // password: shajs('sha256')
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
               password: shajs('sha256')
                 .update(this.loginForm.password)
                 .digest('hex')

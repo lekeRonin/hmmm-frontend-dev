@@ -15,7 +15,11 @@ export const getDirectorys = data => createAPI('/directorys', 'get', data)
 
 // 目录简单列表
 export const getDirectorysById = id => createAPI(`/directorys/${id}`, 'get')
+<<<<<<< HEAD
 export const simple = data => createAPI('/direcotrys', 'post')
+=======
+export const simple = data => createAPI('/directorys/simple', 'get', data)
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 
 // 目录详情
 export const detail = data =>

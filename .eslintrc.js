@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
 =======
@@ -201,4 +202,8 @@ module.exports = {
   // }
 }
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+  }
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 }

@@ -1,5 +1,6 @@
 <template>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <div class="container">
     <el-dialog title="提示" :visible.sync="dialogVisible" width="30%" :before-close="close">
       <div>
@@ -72,6 +73,8 @@ export default {
 }
 </style>
 =======
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
   <div class='container'>试题审核对话框</div>
 </template>
 
@@ -80,4 +83,7 @@ export default {}
 </script>
 
 <style scoped lang='less'></style>
+<<<<<<< HEAD
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a

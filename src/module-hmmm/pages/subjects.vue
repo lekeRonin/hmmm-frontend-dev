@@ -1,10 +1,14 @@
 <template>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
   <div class='container'>学科管理</div>
 </template>
 
 <script>
 export default {}
+<<<<<<< HEAD
 =======
   <div class='container'>
     <el-card>
@@ -212,6 +216,8 @@ export default {
 
 }
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
 </script>
 
 <style scoped lang='less'></style>

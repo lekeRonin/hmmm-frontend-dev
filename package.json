@@ -10,6 +10,7 @@
   },
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "dayjs": "^1.11.7",
@@ -18,12 +19,20 @@
     "axios": "^0.19.2",
     "core-js": "^3.26.1",
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+    "axios": "^0.19.2",
+    "core-js": "^3.6.4",
+    "cos-js-sdk-v5": "^1.4.15-beta.0",
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
     "echarts": "^4.6.0",
     "element-ui": "^2.13.0",
     "font-awesome": "^4.7.0",
     "js-cookie": "^2.2.1",
+<<<<<<< HEAD
     "less": "^4.1.3",
     "less-loader": "5",
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
     "mockjs": "^1.1.0",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",

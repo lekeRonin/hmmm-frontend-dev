@@ -159,6 +159,7 @@ export function toThousandslsFilter (num) {
     .toString()
     .replace(/^-?\d+/g, m => m.replace(/(?=(?!\b)(\d{3})+$)/g, ','))
 }
+<<<<<<< HEAD
 export function formatDateTime (cellvalue) {
   if (cellvalue === '' || !cellvalue) {
     return ''
@@ -177,3 +178,5 @@ export function formatDateTime (cellvalue) {
   ss = ss < 10 ? ('0' + ss) : ss
   return y + '-' + m + '-' + d + ' ' + h + ':' + mm + ':' + ss
 }
+=======
+>>>>>>> 36537a48b7a3ccab02313c5f839c43c7e50dcf2a
