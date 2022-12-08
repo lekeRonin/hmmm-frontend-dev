@@ -159,3 +159,21 @@ export function toThousandslsFilter (num) {
     .toString()
     .replace(/^-?\d+/g, m => m.replace(/(?=(?!\b)(\d{3})+$)/g, ','))
 }
+export function formatDateTime (cellvalue) {
+  if (cellvalue === '' || !cellvalue) {
+    return ''
+  }
+  const date = new Date(cellvalue)
+  const y = date.getFullYear()
+  let m = date.getMonth() + 1
+  let d = date.getDate()
+  let h = date.getHours()
+  let mm = date.getMinutes()
+  let ss = date.getSeconds()
+  m = m < 10 ? ('0' + m) : m
+  d = d < 10 ? ('0' + d) : d
+  h = h < 10 ? ('0' + h) : h
+  mm = mm < 10 ? ('0' + mm) : mm
+  ss = ss < 10 ? ('0' + ss) : ss
+  return y + '-' + m + '-' + d + ' ' + h + ':' + mm + ':' + ss
+}

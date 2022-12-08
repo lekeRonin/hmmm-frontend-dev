@@ -5,7 +5,11 @@ import { getToken } from '@/utils/auth'
 
 // create an axios instance
 const instance = axios.create({
+<<<<<<< HEAD
   baseURL: 'http://127.0.0.1:1024',
+=======
+  baseURL: 'http://127.0.0.1:5000',
+>>>>>>> 474300f603c3d6e3c024bb2d1b53631aa9d7e263
   timeout: 5000 // request timeout
 })
 
@@ -28,8 +32,12 @@ instance.interceptors.request.use(
     Promise.reject(error)
   }
 )
+<<<<<<< HEAD
 
 <<<<<<< HEAD
+=======
+//
+>>>>>>> 474300f603c3d6e3c024bb2d1b53631aa9d7e263
 // respone interceptor
 =======
 // 响应拦截
@@ -74,10 +82,14 @@ instance.interceptors.response.use(
   }
 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 export const request = instance
 =======
 
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+export const request = instance
+>>>>>>> 474300f603c3d6e3c024bb2d1b53631aa9d7e263
 export const createAPI = (url, method, data) => {
   const config = {}
   if (method === 'get') {

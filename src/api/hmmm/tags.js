@@ -7,6 +7,7 @@
  * 标签有关的接口：自己写吧~~  已经被张老师删了 ^_^
  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*
  * @Author: zhanglianchang
  * @Date: 2020-08-01 14:39:32
@@ -15,6 +16,8 @@
  *
  * 标签有关的接口：自己写吧~~  已经被张老师删了 ^_^
  */
+=======
+>>>>>>> 474300f603c3d6e3c024bb2d1b53631aa9d7e263
 import { request } from '@/utils/request'
 
 // 获取学科简单列表
@@ -75,5 +78,8 @@ export function postTagState (data) {
     data
   })
 }
+<<<<<<< HEAD
 =======
 >>>>>>> 759667730197835a878690b89b384df622d555d8
+=======
+>>>>>>> 474300f603c3d6e3c024bb2d1b53631aa9d7e263
